@@ -1,0 +1,346 @@
+.navbar .brand_img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: block !important;
+}
+
+input {
+  background: url(./images/magnifying-glass-solid.svg) no-repeat;
+  background-size: 20px;
+  height: 44px;
+  background-position: 10px 12px;
+  padding: 5px 38px !important;
+}
+
+.seasons_main_wrapper .nav-tabs {
+  justify-content: center;
+  border-bottom: none;
+}
+
+.seasons_main_wrapper .nav-tabs .nav-link {
+  border: none;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.seasons_main_wrapper .nav-tabs .nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.seasons_main_wrapper .nav-tabs .nav-link.active {
+  border: none;
+  color: #fff;
+  border-bottom: 2px solid #194e34;
+  background-color: #194e34;
+}
+
+.episode_card_main .card .card-body a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.episode_card_main .card .card-body .card-subtitle {
+  padding-top: 10px;
+}
+
+/* episode page css */
+.card {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.character_main {
+  padding: 15px;
+}
+
+.heading {
+  font-size: 40px;
+}
+
+.character_main .card:hover {
+  transform: scale(1.01);
+}
+
+.episode_card .card {
+  border: none;
+}
+
+.episode_card .card .all_episode_btn {
+  background: #194e34;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.episode_card .card .all_episode_btn:hover {
+  color: #194e34;
+  background: transparent;
+  border: 1px solid #194e34;
+  box-shadow: 7px 6px 24px -4px rgba(25, 78, 52, 0.75);
+  -webkit-box-shadow: 7px 6px 24px -4px rgba(25, 78, 52, 0.75);
+  -moz-box-shadow: 7px 6px 24px -4px rgba(25, 78, 52, 0.75);
+}
+
+/* character css */
+.character_main .card .card-body img {
+  width: 100%;
+  display: block;
+  height: 350px;
+  object-fit: contain;
+}
+
+.card .card-body .card-title {
+  font-size: 22px;
+}
+
+.card .card-body .card-subtitle {
+  font-size: 18px;
+}
+
+.episode_card_main {
+  padding-bottom: 50px;
+}
+
+/* character main page css */
+.character_wrapper {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  padding: 20px 10px;
+  align-items: center;
+  min-height: 500px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+.character_wrapper h3 {
+  font-size: 30px;
+}
+
+.character_wrapper span {
+  font-size: 20px;
+}
+
+.character_wrapper img {
+  height: 400px;
+  object-fit: contain;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .searchbar_main form input {
+    background-size: 15px;
+    background-position: 10px 14px;
+    padding: 5px 35px;
+  }
+
+  .character_wrapper img {
+    height: 300px;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 992px) {
+  .character_wrapper {
+    min-height: 400px;
+  }
+
+  .seasons_main_wrapper .nav-tabs .nav-item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .character_main .card .card-body img {
+    height: 300px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .character_wrapper h3 {
+    font-size: 24px;
+  }
+
+  .character_wrapper span {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading {
+    font-size: 26px;
+  }
+
+  .navbar .brand_img {
+    width: 200px;
+  }
+
+  .character_details {
+    order: 2;
+    margin-bottom: 0;
+    margin-top: 40px !important;
+  }
+
+  .character_wrapper img {
+    width: auto !important;
+    border-radius: 5%;
+    margin: 0 auto;
+  }
+
+  .seasons_main_wrapper .nav-tabs .nav-link {
+    font-size: 20px;
+  }
+
+  .seasons_main_wrapper .nav-tabs .nav-link {
+    padding: 0.5rem 0.5rem;
+  }
+
+  .character_wrapper img {
+    min-height: 100%;
+  }
+
+  .character_wrapper h3 {
+    font-size: 20px;
+  }
+
+  .character_wrapper span {
+    font-size: 16px;
+  }
+
+  .character_main .card .card-body img {
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 576px) {
+  .character_main {
+    padding: 10px;
+  }
+
+  .character_main .container {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+
+  .navbar .brand_img {
+    width: 160px;
+  }
+
+  .searchbar_main form input {
+    margin: 0 20px !important;
+  }
+
+  .character_wrapper h2 {
+    font-size: 26px;
+  }
+
+  .character_wrapper h3 {
+    font-size: 22px;
+  }
+
+  .character_wrapper span {
+    font-size: 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+}
+
+/* 11-07 */
+.searchbar_main form:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 12%), 0 4px 8px rgb(0 0 0 / 6%);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.searchbar_main form input {
+  background: url(http://localhost:3000/static/media/magnifying-glass-solid.cd761af2e6d53d07ac61.svg) no-repeat #fff;
+  background-size: 20px;
+  height: 44px;
+  background-position: 10px 12px;
+  padding: 5px 38px;
+}
+
+body {
+  background: url(./images/bg.jpg) no-repeat;
+  background-attachment: fixed;
+}
+
+.character_wrapper {
+  background: #fff;
+}
+
+.seasons_main_wrapper .nav-tabs .nav-link.active {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 12%), 0 4px 8px rgb(0 0 0 / 6%);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.episode_card_main .card:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgb(0 0 0 / 12%), 0 4px 8px rgb(0 0 0 / 6%);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+.search_bar input {
+  height: 44px;
+}
+
+.search_bar input:focus {
+  box-shadow: none;
+  border-color: #194e34;
+}
+
+/*  */
+table th,
+table tr,
+table tr td {
+  border: 1px solid #fff;
+  padding: 10px;
+}
+
+table tr:nth-child(2n+1) {
+  background: rgb(255 255 255 / 41%);
+}
+
+/*  */
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #383636;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}

@@ -9,6 +9,8 @@ const Main = () => {
   const [filterVal, setFilterVal] = useState("")
   const [isLoading, setIsLoading] = useState(false);
 
+  const [count, setCount] = useState(0)
+
 
   useEffect(() => {
     const fetchData = () => {
@@ -50,9 +52,13 @@ const Main = () => {
     setFilterVal(e.target.value)
   }
 
-
+  const incrementCount = () => {
+    setCount(count + 1)
+  }
   return (
     <>
+      {/* <h1 className="text-white">Count:{count}</h1>
+      <button onClick={incrementCount}>Increment</button> */}
       {isLoading ? <Spinner /> :
         <>
           <input
